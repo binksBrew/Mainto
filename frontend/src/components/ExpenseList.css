@@ -1,0 +1,100 @@
+/* components/ExpenseList.css */
+
+.expense-list-container {
+  padding: 30px;
+  max-width: 850px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+}
+
+.expense-list-title {
+  font-size: 26px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.expense-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.expense-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.expense-item:hover {
+  background-color: #eaf3ff;
+  transform: translateY(-3px);
+}
+
+.expense-info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 5px;
+}
+
+.expense-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+  margin: 0;
+}
+
+.expense-details {
+  font-size: 15px;
+  color: #555;
+  margin: 2px 0;
+}
+
+.expense-label {
+  font-weight: 600;
+  color: #444;
+  margin-right: 5px;
+}
+
+.delete-button {
+  background-color: #ff5c5c;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #ff2c2c;
+}
+
+.no-expenses-message {
+  font-size: 18px;
+  color: #888;
+  text-align: center;
+  padding: 25px;
+}
+
+.expense-link {
+  text-decoration: none;
+  color: inherit; /* Keeps the color from the parent styles */
+  display: block; /* Makes the entire element clickable */
+  width: 100%; /* Ensures the link covers the whole expense item */
+}

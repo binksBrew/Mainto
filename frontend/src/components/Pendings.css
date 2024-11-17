@@ -1,0 +1,123 @@
+/* Pendings Page Styles */
+.pendings-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  }
+  
+  /* Property Dropdown */
+  .property-dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .property-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .property-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
+  
+  .property-select {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  /* Header Section */
+  .pendings-container h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Error Message Styling */
+  .error {
+    color: #f44336;
+    background-color: #fdecea;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* Table Styles */
+  .pendings-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .pendings-table th, 
+  .pendings-table td {
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+  .pendings-table th {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .pendings-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .pendings-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Action Button */
+  .pendings-table button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pendings-table button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .pendings-container {
+      padding: 15px;
+    }
+  
+    .pendings-table th, 
+    .pendings-table td {
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+  
+    .property-select {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+  

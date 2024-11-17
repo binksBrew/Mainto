@@ -1,0 +1,349 @@
+General Styling
+.homepage-container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-bottom: 75px;
+}
+
+/* Welcome Section */
+.welcome-section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Property Dropdown */
+.property-dropdown {
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.property-header {
+  display: flex;
+  align-items: center;
+}
+
+.property-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.property-select {
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  outline: none;
+}
+
+.property-select option {
+  padding: 10px;
+}
+
+/* Features Section (Cards) */
+.features-section {
+  margin-bottom: 30px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  padding: 25px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Button Cards Section */
+.button-cards-section {
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.button-card-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.button-card {
+  background-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  flex: 1;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.button-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Rent Due Section */
+.rent-due-section {
+  margin-bottom: 30px;
+}
+
+.rent-due-card {
+  display: flex;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rent-due-card img {
+  margin-right: 15px;
+}
+
+/* Tenants/Expense Section */
+.tenants-expense-section {
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  gap: 100px;
+}
+
+/* Specific styling for tenant and expense toggle buttons */
+.toggle-buttons button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-buttons .active {
+  background-color: #0056b3;
+}
+
+.toggle-buttons button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.toggle-content {
+  margin-top: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+/* Specific styles for smaller buttons in mobile view */
+@media (max-width: 768px) {
+  .toggle-buttons button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+
+/* Tenant List Section */
+#tenant-list {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+#tenant-list h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+#tenant-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#tenant-list li {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#tenant-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#tenant-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+}
+
+#tenant-list a:hover {
+  color: #007BFF;
+}
+
+
+
+
+
+
+
+/* Tenant and Expense List Styles */
+#tenant-list,
+#expense-content {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#tenant-list h3,
+#expense-content h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Expense List Styles (Aligns with ExpenseList.css) */
+#expense-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#expense-content li {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  gap: 10px;
+}
+
+#expense-content li:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-2px);
+}
+
+#expense-content p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+#expense-content p:first-child {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .homepage-container {
+    padding: 15px;
+  }
+
+  .features-section {
+    margin-bottom: 20px;
+  }
+
+  .property-select {
+    width: 100%;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .toggle-buttons button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  #tenant-list {
+    padding: 15px;
+  }
+
+  #tenant-list li {
+    padding: 10px;
+  }
+
+  #tenant-list a {
+    font-size: 16px;
+  }
+}

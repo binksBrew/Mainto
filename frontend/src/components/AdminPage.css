@@ -1,0 +1,72 @@
+.admin-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .admin-stats {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .stat-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-card h2 {
+    font-size: 2rem;
+    margin: 0 0 10px;
+  }
+  
+  .stat-card p {
+    margin: 0 0 10px;
+  }
+  
+  .users-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .users-table th,
+  .users-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .users-table th {
+    background-color: #f8f9fa;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+  }
+  

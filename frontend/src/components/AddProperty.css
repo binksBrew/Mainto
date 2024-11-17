@@ -1,0 +1,215 @@
+/* General Styling */
+.add-property-container {
+  padding: 25px;
+  margin: 50px auto;
+  max-width: 1000px;
+  background-color: #ffffff;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Title Styling */
+h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Property Image Upload Section */
+.property-image-upload {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.image-upload-label {
+  display: block;
+  width: 100%;
+  height: 200px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 200px;
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.image-upload-label:hover {
+  border-color: #0056b3;
+}
+
+.image-input {
+  display: none;
+}
+
+/* Property Type Select */
+.property-type-select {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.property-type-select select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.property-type-select select:focus {
+  border-color: #0056b3;
+}
+
+/* Property Details */
+.property-details input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.property-details input:focus {
+  border-color: #0056b3;
+}
+
+/* Room Details Section */
+.room-details {
+  margin-bottom: 30px;
+}
+
+.room-details h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Room Section Styling */
+.room-section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.room-section h4 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Room Amenities Styling */
+.room-asset {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.room-assets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.room-assets label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.room-assets span {
+  font-size: 14px;
+}
+
+/* Room Checkbox Styling */
+.room-checkbox input {
+  margin-right: 8px;
+}
+
+/* Add Room Button */
+.add-room-button {
+  background-color: #0056b3;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+}
+
+.add-room-button:hover {
+  background-color: #004099;
+  transform: translateY(-3px);
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: darkblue;
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #002f6c;
+  transform: translateY(-3px);
+}
+
+/* Delete Button */
+.delete-button {
+  background-color: red;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 15px;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+  transform: translateY(-3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .add-property-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .property-type-select select,
+  .property-details input {
+    font-size: 14px;
+  }
+
+  .room-asset {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
