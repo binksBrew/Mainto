@@ -19,7 +19,7 @@ const Header = ({ selectedPropertyId: initialSelectedPropertyId, onPropertyChang
       }
 
       try {
-        const response = await fetch('http://127.0.0.1:8000/properties/', {
+        const response = await fetch(process.env.REACT_APP_BACKEND_URL + '/properties/', {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json',

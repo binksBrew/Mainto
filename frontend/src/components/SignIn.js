@@ -25,8 +25,6 @@ function SignIn() {
     try {
       // Send login request
       const response = await axiosInstance.post('/accounts/login/', { email, password });
-      console.log('Login response:', response);
-
       const { access, refresh, user } = response.data; // Destructure response
 
       // Store tokens and user information

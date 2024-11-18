@@ -18,7 +18,7 @@ const Pendings = () => {
       if (!token) return;
 
       try {
-        const response = await fetch('http://127.0.0.1:8000/properties/', {
+        const response = await fetch(process.env.REACT_APP_BACKEND_URL + '/properties/', {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json'
@@ -52,7 +52,7 @@ const Pendings = () => {
       }
 
       try {
-        const response = await fetch(`http://127.0.0.1:8000/properties/${selectedProperty}/tenants/`, {
+        const response = await fetch(process.env.REACT_APP_BACKEND_URL + `/properties/${selectedProperty}/tenants/`, {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json'
