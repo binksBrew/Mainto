@@ -8,6 +8,11 @@ services:
     ports:
       - "8000:8000"
       - "3000:3000"
+    volumes:
+      - ./backend:/app/backend
+      - ./frontend:/app/frontend
+      - /app/frontend/node_modules
+      - /app/backend/venv
     depends_on:
       - db
     environment:

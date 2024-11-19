@@ -184,18 +184,18 @@ const AddProperty = () => {
   };
 
   return (
-    <div className="add-property">
+    <div className="add-property-container">
       <Header />
       <form onSubmit={handleSubmit}>
         <h2>{id ? 'Edit Property' : 'Add Property'}</h2>
-        <div>
+        <div className="property-type-select">
           <label>Property Type:</label>
           <select value={propertyType} onChange={(e) => setPropertyType(e.target.value)}>
             <option value="commercial">Commercial</option>
             <option value="residential">Residential</option>
           </select>
         </div>
-        <div>
+        <div className="property-details">
           <label>Property Name:</label>
           <input
             type="text"
@@ -204,7 +204,7 @@ const AddProperty = () => {
             required
           />
         </div>
-        <div>
+        <div className="property-details">
           <label>Property Address:</label>
           <input
             type="text"
@@ -213,7 +213,7 @@ const AddProperty = () => {
             required
           />
         </div>
-        <div>
+        <div className="property-details">
           <label>Manager Name:</label>
           <input
             type="text"
@@ -222,7 +222,7 @@ const AddProperty = () => {
             required
           />
         </div>
-        <div>
+        <div className="property-details">
           <label>Manager Contact:</label>
           <input
             type="text"
@@ -231,50 +231,59 @@ const AddProperty = () => {
             required
           />
         </div>
-        <div>
-          <label>Property Image:</label>
-          <input
-            type="file"
-            accept="image/*"
-            onChange={(e) => setPropertyImage(e.target.files[0])}
-          />
+        <div className="property-image-upload">
+          <label className="image-upload-label">
+            Property Image:
+            <input
+              className="image-input"
+              type="file"
+              accept="image/*"
+              onChange={(e) => setPropertyImage(e.target.files[0])}
+            />
+          </label>
         </div>
-        <h3>Rooms</h3>
-        {rooms.map((room, index) => (
-          <div key={index}>
-            <h4>Room {index + 1}</h4>
-            <label>Room Number:</label>
-            <input
-              type="text"
-              value={room.roomNumber}
-              onChange={(e) => handleRoomChange(index, 'roomNumber', e.target.value)}
-              required
-            />
-            <label>Total Beds:</label>
-            <input
-              type="number"
-              value={room.totalBeds}
-              onChange={(e) => handleRoomChange(index, 'totalBeds', e.target.value)}
-              required
-            />
-            <label>Amenities:</label>
-            <div>
-              {["bathrooms", "kitchen", "livingArea", "diningArea", "workspace", "parking", "securityFeatures", "communityFacilities"].map((amenity) => (
-                <label key={amenity}>
-                  <input
-                    type="checkbox"
-                    checked={room[amenity]}
-                    onChange={(e) => handleRoomChange(index, amenity, e.target.checked)}
-                  /> {amenity.replace(/([A-Z])/g, ' $1')}
-                </label>
-              ))}
+        <div className="room-details">
+          <h3>Rooms</h3>
+          {rooms.map((room, index) => (
+            <div key={index} className="room-section">
+              <h4>Room {index + 1}</h4>
+              <div className="room-asset">
+                <label>Room Number:</label>
+                <input
+                  type="text"
+                  value={room.roomNumber}
+                  onChange={(e) => handleRoomChange(index, 'roomNumber', e.target.value)}
+                  required
+                />
+              </div>
+              <div className="room-asset">
+                <label>Total Beds:</label>
+                <input
+                  type="number"
+                  value={room.totalBeds}
+                  onChange={(e) => handleRoomChange(index, 'totalBeds', e.target.value)}
+                  required
+                />
+              </div>
+              <div className="room-assets">
+                {["bathrooms", "kitchen", "livingArea", "diningArea", "workspace", "parking", "securityFeatures", "communityFacilities"].map((amenity) => (
+                  <label key={amenity} className="room-checkbox">
+                    <input
+                      type="checkbox"
+                      checked={room[amenity]}
+                      onChange={(e) => handleRoomChange(index, amenity, e.target.checked)}
+                    />
+                    <span>{amenity.replace(/([A-Z])/g, ' $1')}</span>
+                  </label>
+                ))}
+              </div>
+              <button type="button" className="delete-button" onClick={() => deleteRoom(index)}>Delete Room</button>
             </div>
-            <button type="button" onClick={() => deleteRoom(index)}>Delete Room</button>
-          </div>
-        ))}
-        <button type="button" onClick={addRoom}>Add Room</button>
+          ))}
+          <button type="button" className="add-room-button" onClick={addRoom}>Add Room</button>
+        </div>
         {errorMessage && <p className="error">{errorMessage}</p>}
-        <button type="submit">{id ? 'Update Property' : 'Add Property'}</button>
+        <button type="submit" className="submit-button">{id ? 'Update Property' : 'Add Property'}</button>
       </form>
     </div>
   );
