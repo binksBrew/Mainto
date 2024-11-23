@@ -167,7 +167,7 @@ const ExpenseForm = ({ propertyId, onExpenseAdded = () => {}, onExpenseUpdated =
           />
         </div>
 
-        <div className="form-group">
+        {/* <div className="form-group">
           <label className="upload-label">
             Upload Document
             <input
@@ -177,7 +177,7 @@ const ExpenseForm = ({ propertyId, onExpenseAdded = () => {}, onExpenseUpdated =
               className="document-input"
             />
           </label>
-        </div>
+        </div> */}
 
         <div className="button-container">
           <button type="submit" className="submit-button">

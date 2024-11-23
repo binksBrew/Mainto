@@ -25,7 +25,7 @@ const HomePage = () => {
   );
   const [selectedPropertyImage, setSelectedPropertyImage] = useState(propertySmallIcon);
   const navigate = useNavigate();
-  const firstName = localStorage.getItem('first_name') || 'User';
+  const firstName = localStorage.getItem('first_name') || 'Admin!';
 
   useEffect(() => {
     const fetchProperties = async () => {
@@ -96,7 +96,7 @@ const HomePage = () => {
       />
       <div className="homepage-container">
         <div className="welcome-section">
-          <h2>Hi, Welcome Back! <strong>{firstName}</strong></h2>
+          <h2>Hi <strong>{firstName}</strong></h2>
         </div>
 
         <div className="property-dropdown">

@@ -231,7 +231,7 @@ const AddProperty = () => {
             required
           />
         </div>
-        <div className="property-image-upload">
+        {/* <div className="property-image-upload">
           <label className="image-upload-label">
             Property Image:
             <input
@@ -241,7 +241,7 @@ const AddProperty = () => {
               onChange={(e) => setPropertyImage(e.target.files[0])}
             />
           </label>
-        </div>
+        </div> */}
         <div className="room-details">
           <h3>Rooms</h3>
           {rooms.map((room, index) => (

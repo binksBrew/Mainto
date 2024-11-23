@@ -13,6 +13,16 @@
   align-items: center;
 }
 
+/* General Logo Link Styling */
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove underline from Link */
+  color: inherit; /* Use the current text color */
+}
+
+
+
 .logo {
   width: 50px;
   height: 50px;
@@ -38,4 +48,112 @@
 
 .nav-links a:hover {
   color: darkblue;
+}
+
+
+
+/* General Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-title .logo {
+  height: 40px;
+  width: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+/* Toggle Button */
+.nav-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide menu by default on small screens */
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 200px; /* Adjust width of dropdown */
+  }
+
+  .nav-links.show {
+    display: flex; /* Show menu when toggled */
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .nav-toggle {
+    display: none; /* Hidden by default for large screens */
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+  }
+
+  .nav-toggle:hover {
+    color: #007bff; /* Optional hover color for better user feedback */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-title .logo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 8px 0;
+  }
 }
